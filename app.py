@@ -10,8 +10,8 @@ st.markdown("""---""")
 
 
 # Set org ID and API key
-openai.organization = "org-NnjvX4CoOhZUkjNC2Ek5VZqt"
-openai.api_key = "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"
+openai.organization = st.secrets.secrets["openai"]["organization"][0]
+openai.api_key = st.secrets.secrets["openai"]["api_key"][0]
 
 
 # Initialise session state variables
