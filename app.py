@@ -130,7 +130,7 @@ with container:
         prompt(user_input)
 
 if st.session_state['generated']:
-    instruction = 
+    # instruction = 
     with response_container:
         for i in range(len(st.session_state['generated'])):
             message(st.session_state["past"][i], is_user=True, key=str(i) + '_user', avatar_style="croodles", seed="Tigger")
