@@ -123,7 +123,7 @@ container = st.container()
 
 with container:
     with st.form(key='my_form', clear_on_submit=True):
-        user_input = st.text_area("You:", 'Manila', key='input', height=100)
+        user_input = st.text_area("You:", 'Shortly summarize the contents of this email thread per timestamp. Organize it in a 3 column table with namely Date, Time, and Content.', key='input', height=100)
         submit_button = st.form_submit_button(label='Send')
 
     if submit_button and user_input:
