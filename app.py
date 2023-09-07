@@ -106,7 +106,7 @@ file=False
 st.markdown("##")
 city = st.text_input('Where do you wanna go?', 'Manila')
 generate_button = st.button("Generate :rocket:", key="generate",use_container_width=True)
-
+st.code("Shortly summarize the contents of this email thread per timestamp. Organize it in a 3 column table with namely Date, Time, and Content.")
 instruction = f'''What should i wear if I go to {city}? Organize it in a table.
 
     '''
