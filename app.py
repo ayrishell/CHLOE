@@ -129,11 +129,8 @@ with container:
     if submit_button and user_input:
         prompt(user_input)
 
-action_items_button = st.button("Generate Action Items :rocket:", key="action_items",use_container_width=True)
-if action_items_button:
-    # prompt(prompts.action_items_prompt)
-    prompt("hi")
-    
+
+
 if st.session_state['generated']:
     # instruction = 
     with response_container:
@@ -143,3 +140,7 @@ if st.session_state['generated']:
             st.write(
                 f"Model used: {st.session_state['model_name'][i]}; Number of tokens: {st.session_state['total_tokens'][i]}; Cost: ${st.session_state['cost'][i]:.5f}")
             counter_placeholder.write(f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
+        action_items_button = st.button("Generate Action Items :rocket:", key="action_items",use_container_width=True)
+        if action_items_button:
+            # prompt(prompts.action_items_prompt)
+            prompt("hi")
