@@ -129,6 +129,11 @@ with container:
     if submit_button and user_input:
         prompt(user_input)
 
+action_items_button = st.button("Generate Action Items :rocket:", key="action_items",use_container_width=True)
+if action_items_button:
+    # prompt(prompts.action_items_prompt)
+    prompt("hi")
+    
 if st.session_state['generated']:
     # instruction = 
     with response_container:
